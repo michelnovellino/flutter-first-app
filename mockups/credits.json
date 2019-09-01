@@ -1,0 +1,20 @@
+{ 
+    "author" : [ 
+    {
+        "name": "Photo by eberhard grossgasteiger from Pexels",
+        "image": "arch-bridge-clouds-814499.jpg"
+    },
+    {
+        "name": "Photo by eberhard grossgasteiger from Pexels",
+        "image": "clouds-cloudy-skies-conifers-443696.jpg"
+    },
+    {
+        "name": "Photo by eberhard grossgasteiger from Pexels",
+        "image": "clouds-daylight-environment-655761.jpg"
+    },
+    {
+        "name": "Photo by eberhard grossgasteiger from Pexels",
+        "image": "beautiful-bridge-cabin-1064144.jpg"
+    }
+]
+}

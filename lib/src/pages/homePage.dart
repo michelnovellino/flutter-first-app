@@ -1,10 +1,8 @@
-import 'package:destiny/src/pages/alertPage.dart';
 import 'package:flutter/material.dart';
 import 'package:destiny/src/providers/menu.provider.dart';
 import 'package:destiny/src/utils/icons.util.dart';
 
 class HomePage extends StatelessWidget {
-  final items = ['item 1', 'item 2', 'item 3', 'item 4'];
   @override
   Widget build(BuildContext context) {
     return Container(
