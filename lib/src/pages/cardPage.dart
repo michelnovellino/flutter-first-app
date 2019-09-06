@@ -14,7 +14,7 @@ class CardPage extends StatelessWidget {
               _cardType1(),
               SizedBox(height: 20),
               _cardType2()
-              ],
+            ],
           )),
     );
   }
@@ -27,24 +27,26 @@ class CardPage extends StatelessWidget {
             leading: Icon(Icons.photo_album, color: Colors.blue),
             title: Text('Awesome title'),
             subtitle: Text(
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis justo sed diam scelerisque consectetur in at arcu. "
-                ),
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis justo sed diam scelerisque consectetur in at arcu. "),
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: <Widget>[
-            FlatButton(
-              child: Text('Cancel'), onPressed: () {},
-            ),
-            FlatButton(
-              child: Text('OK'), onPressed: () {},
-            )
-          ],)
+              FlatButton(
+                child: Text('Cancel'),
+                onPressed: () {},
+              ),
+              FlatButton(
+                child: Text('OK'),
+                onPressed: () {},
+              )
+            ],
+          )
         ],
-
       ),
     );
   }
+
   Widget _cardType2() {
     return Card(
       // clipbehavior aplica el mismo bordeado a la imagen del card
@@ -52,23 +54,21 @@ class CardPage extends StatelessWidget {
       child: Column(
         children: <Widget>[
           FadeInImage(
-            image: NetworkImage('https://images.pexels.com/photos/132037/pexels-photo-132037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') ,
+            height: 245.0,
+            image: NetworkImage(
+                'https://images.pexels.com/photos/132037/pexels-photo-132037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'),
             placeholder: AssetImage("assets/images/jar-loading.gif"),
             fadeInDuration: Duration(milliseconds: 200),
-            height: 245.0,
             fit: BoxFit.cover,
           ),
 /*           Image(image: NetworkImage('https://images.pexels.com/photos/132037/pexels-photo-132037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')),
- */          Container(
-            padding: EdgeInsets.all(10),
-            child: Text(
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis justo sed diam scelerisque consectetur in at arcu. "
-                )
-          )
+ */
+          Container(
+              padding: EdgeInsets.all(10),
+              child: Text(
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis justo sed diam scelerisque consectetur in at arcu. "))
         ],
       ),
     );
   }
 }
-
-
